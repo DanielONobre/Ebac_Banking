@@ -1,0 +1,28 @@
+* { /*Página geral*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    flex-direction: column;
+}
+
+div form{
+display: flex;
+flex-direction: column;
+margin-top: 30px;
+margin-bottom: 30px;
+width: 400px;
+padding: 45;
+}
+
+
+
+button{
+    background-color: green;
+}
