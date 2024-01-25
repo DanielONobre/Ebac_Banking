@@ -9,15 +9,16 @@ form.addEventListener('submit', function(e){
     let formEValido = false;
     e.preventDefault();
 
-    const nomeBeneficiario = getElementById('nome-beneficiario');
+    const nomeBeneficiario = document.getElementById('nome-beneficiario');
     const numeroContaBeneficiario = document.getElementById('numero-conta');
-    const valorDeposito = document.getElementById('valor-deposito');
-    const mensagemSucesso = 'Montante de: ${valorDeposito} depositado para o cliente ${nomeBeneficiario} - conta ${numeroContaBeneficiario}';
+    const valorDeposito = document.getElementById('valor-conta');
+    const mensagemSucesso = `Montante de: ${valorDeposito.value} depositado para o cliente ${nomeBeneficiario.value} - conta ${numeroContaBeneficiario.value}`;
+  
     formEValido = validaNome(nomeBeneficiario.value)
     if (formEValido){
-        alert("O nome não est[a completo")
+        alert(mensagemSucesso);
     } else{
-        alert("Tudo certo")
+        alert("O nome não esta completo");
     }
 })
 
