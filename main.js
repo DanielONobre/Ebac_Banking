@@ -3,7 +3,7 @@ const nomeBeneficiario = document.getElementById('nome-beneficiario');
 let formEValido = false;
 
 function validaNome(nomeCompleto){
-    const nomeComArray = nomeCompleto.split('');
+    const nomeComArray = nomeCompleto.split(' ');
     return nomeComArray.length >= 2;
 }
 
